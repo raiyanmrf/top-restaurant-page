@@ -79,3 +79,13 @@ p {
 li {
   list-style-type: none;
 }
+
+footer {
+  margin-block: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  font-size: 13px;
+}
