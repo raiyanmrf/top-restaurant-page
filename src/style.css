@@ -9,8 +9,7 @@ body {
   background-color: #c2c5ca;
   background-image: url("./bg.jpg");
   background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+
   font-family:
     system-ui,
     -apple-system,

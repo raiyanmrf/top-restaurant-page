@@ -1,5 +1,6 @@
 export function createHomeTab(svg, data) {
   const content = document.getElementById("content");
+  const cards = [];
 
   // title card
   const titleCard = document.createElement("div");
@@ -11,7 +12,7 @@ export function createHomeTab(svg, data) {
   titleCardDesc.textContent = data.title.description;
   titleCard.appendChild(titleCardName);
   titleCard.appendChild(titleCardDesc);
-  content.appendChild(titleCard);
+  cards.push(titleCard);
 
   // hour card
   const hourCard = document.createElement("div");
@@ -26,7 +27,7 @@ export function createHomeTab(svg, data) {
   });
   hourCard.appendChild(hourCardName);
   hourCard.appendChild(hourCardList);
-  content.appendChild(hourCard);
+  cards.push(hourCard);
 
   // location card
   const locationCard = document.createElement("div");
@@ -37,5 +38,7 @@ export function createHomeTab(svg, data) {
   locationCardDesc.textContent = data.location.description;
   locationCard.appendChild(locationCardName);
   locationCard.appendChild(locationCardDesc);
-  content.appendChild(locationCard);
+  cards.push(locationCard);
+
+  return cards;
 }

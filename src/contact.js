@@ -1,5 +1,5 @@
 export function createContactTab(svg, data) {
-  const content = document.getElementById("content");
+  const cards = [];
 
   // title card
   const titleCard = document.createElement("div");
@@ -7,7 +7,7 @@ export function createContactTab(svg, data) {
   const titleCardName = document.createElement("h1");
   titleCardName.innerHTML = svg + " Contact Us";
   titleCard.appendChild(titleCardName);
-  content.appendChild(titleCard);
+  cards.push(titleCard);
 
   console.log(data);
 
@@ -27,6 +27,8 @@ export function createContactTab(svg, data) {
     personCard.appendChild(personCardRole);
     personCard.appendChild(personCardEmail);
     personCard.appendChild(personCardPhone);
-    content.appendChild(personCard);
+    cards.push(personCard);
   }
+
+  return cards;
 }

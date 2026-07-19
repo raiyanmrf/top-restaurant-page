@@ -1,5 +1,5 @@
 export function createMenuTab(svg, data) {
-  const content = document.getElementById("content");
+  const cards = [];
 
   // title card
   const titleCard = document.createElement("div");
@@ -7,7 +7,7 @@ export function createMenuTab(svg, data) {
   const titleCardName = document.createElement("h1");
   titleCardName.innerHTML = svg + " Menus";
   titleCard.appendChild(titleCardName);
-  content.appendChild(titleCard);
+  cards.push(titleCard);
 
   for (const menu in data) {
     // menu category card
@@ -16,7 +16,7 @@ export function createMenuTab(svg, data) {
     const catCardName = document.createElement("h2");
     catCardName.textContent = [menu];
     catCard.appendChild(catCardName);
-    content.appendChild(catCard);
+    cards.push(catCard);
 
     for (const item of data[menu]) {
       // menu item card
@@ -31,7 +31,9 @@ export function createMenuTab(svg, data) {
       itemCard.appendChild(itemCardName);
       itemCard.appendChild(itemCardDesc);
       itemCard.appendChild(itemCardPrice);
-      content.appendChild(itemCard);
+      cards.push(itemCard);
     }
   }
+
+  return cards;
 }
