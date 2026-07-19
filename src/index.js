@@ -14,4 +14,4 @@ createHomeTab(svg, data.home);
 
 createMenuTab(svg, data.menu);
 
-createContactTab(svg);
+createContactTab(svg, data.contacts);

@@ -9,9 +9,8 @@ export function createMenuTab(svg, data) {
   titleCard.appendChild(titleCardName);
   content.appendChild(titleCard);
 
-  // menu card
   for (const menu in data) {
-    // category card
+    // menu category card
     const catCard = document.createElement("div");
     catCard.classList.add("card");
     const catCardName = document.createElement("h2");
@@ -19,9 +18,8 @@ export function createMenuTab(svg, data) {
     catCard.appendChild(catCardName);
     content.appendChild(catCard);
 
-    console.log(data[menu]);
-
     for (const item of data[menu]) {
+      // menu item card
       const itemCard = document.createElement("div");
       itemCard.classList.add("card");
       const itemCardName = document.createElement("h2");
