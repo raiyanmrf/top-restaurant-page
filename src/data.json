@@ -4,7 +4,7 @@
       "name": "Beary's Breakfast Bar",
       "description": "Beary's has the best porridge! The atmosphere and customer service make you feel like you are sitting in the middle of the woods, eating like a bear!"
     },
-    "hours": {
+    "hour": {
       "name": "Hours",
       "description": [
         "Sunday: 8am - 8pm",
