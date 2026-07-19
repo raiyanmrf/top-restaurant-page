@@ -29,7 +29,7 @@
   },
 
   "menu": {
-    "beverages": [
+    "Beverages": [
       {
         "name": "Honey Tea",
         "description": "A warm, sweet tea made with the highest quality honey and a bit of lemon to start your day off right!",
@@ -41,7 +41,7 @@
         "price": 3
       }
     ],
-    "sides": [
+    "Sides": [
       {
         "name": "Toast and Jam",
         "description": "A slice of toast, your choice of bread, and our homemade blackberry or raspberry jam.",
@@ -53,7 +53,7 @@
         "price": 3
       }
     ],
-    "mainDishes": [
+    "MainDishes": [
       {
         "name": "Pancakes",
         "description": "A stack of homemade buttermilk pancakes, served with our locally sourced maple syrup.",
